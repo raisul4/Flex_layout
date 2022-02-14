@@ -1,0 +1,208 @@
+.navber {
+  height: 125px;
+  background-color: #6f4e37;
+  position: relative;
+}
+* {
+    font-family: 'Playfair Display', serif;
+}
+body {
+  width: 1168px;
+  margin: auto;
+  height: 1400px;
+}
+.main {
+  display: flex;
+  /* border: 3px solid rgb(8, 8, 8); */
+  height: 784px;
+  background-color: #eeeeee;
+}
+.main .colum_left {
+  width: 30%;
+  height: 750px;
+  /* background-color: rgb(0, 26, 255); */
+}
+.main .colum_left .hero {
+  height: 40%;
+  /* border: 1px solid red; */
+  /* background-color: gray; */
+  color: rgb(2, 2, 2);
+  font-size: 25px;
+  padding: 10px;
+}
+.main .colum_left .hero p {
+  color: #331f11;
+  font-size: 19px;
+}
+.main .colum_left .hero p a {
+  color: #be5911;
+}
+
+.main .colum_left .sidebar {
+  /* border: 2px solid green; */
+  /* background-color: blueviolet; */
+  height: 59%;
+  padding: 10px;
+  color: rgb(65, 50, 50);
+}
+.main .colum_left .sidebar p {
+  color: #4b2e19;
+  font-size: 19px;
+}
+.main .colum_left .sidebar img {
+  width: 323px;
+}
+.main .colum_Right {
+  width: 70%;
+  height: 750px;
+}
+.main .colum_Right .main_content {
+  height: 450px;
+  border: 1px solid rgb(240, 233, 233);
+  color: white;
+  background-image: url("./img/hot-coffee-bean-bag-ybczgeaxjd8z3s0g.jpg");
+}
+.main .colum_Right .main_content h2 a {
+  color: white;
+  text-decoration: none;
+  /* border: 1px solid #be5911; */
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #be5911;
+}
+.main .colum_Right .main_content p {
+  text-align: center;
+  font-size: 39px;
+  font-weight: bold;
+}
+.main .colum_Right .main_content h2 a:hover {
+  color: rgb(231, 230, 223);
+}
+.main .colum_Right .main_content h2 {
+  text-align: center;
+  margin-top: 125px;
+}
+.main .colum_Right .Extra_content {
+  /* border: 2px solid rgb(0, 26, 255); */
+  height: 300px;
+  padding: 5px;
+}
+.main .colum_Right .Extra_content img {
+  width: 250px;
+  height: 230px;
+  padding: 5px 6px;
+}
+
+.related {
+  height: 356px;
+  background-color: rgb(233, 200, 162);
+  display: flex;
+}
+.related_image {
+  height: 369px;
+  width: 703px;
+  background-image: url("./img/piping_hot_coffee_d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.related_image h2 {
+  color: rgb(250, 250, 250);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 85px;
+  font-size: 29px;
+}
+.related_post {
+  width: 464px;
+  height: 369px;
+  background-color: rgb(226, 213, 204);
+}
+.related_post h2 {
+  color: rgb(32, 27, 27);
+  text-align: center;
+}
+.related_post p {
+  color: #4b2e19;
+  font-size: 19px;
+  padding: 18px;
+}
+.related_post h3 {
+  color: rgb(20, 20, 20);
+  text-align: center;
+  font-size: 25px;
+}
+.related_post h3 a {
+  text-decoration: none;
+}
+.footer {
+  height: 120px;
+  background-color: rgb(116, 110, 107);
+}
+.footer p{
+    text-align: center;
+    padding-top: 45px;
+    font-size: 17px;
+    color: white;
+}
+/* layout_end */
+/* content_part */
+/* navber_part */
+.navber .logo {
+  /* border: 1px solid red; */
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 48px;
+}
+.navber .logo i {
+  font-size: 35px;
+  color: rgb(255, 249, 247);
+}
+.navber > ul {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+  display: inline-block;
+  position: absolute;
+  left: 400px;
+  top: 45px;
+}
+.navber > ul > li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+.navber > ul > li > a {
+  text-decoration: none;
+  padding: 25px 5px;
+  font-size: 20px;
+  color: white;
+}
+.navber > ul > li ul {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 102, 165);
+  vertical-align: top;
+  padding: 10px;
+  position: absolute;
+  width: 120px;
+  top: 95%;
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: 0.5s;
+}
+.navber > ul > li ul li {
+  list-style-type: none;
+}
+.navber > ul > li ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 12px 10px;
+  font-size: 20px;
+}
+.navber > ul > li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
